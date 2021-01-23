@@ -63,7 +63,7 @@ class SetBookingViewController: UIViewController {
         super.viewDidLoad()
         self.isModalInPresentation = true // 下スワイプで閉じないようにする
         
-        hotelNameLabel.text = "ホテル トクトラス"
+        hotelNameLabel.text = "ホテル トクテラス"
         
     }
 }

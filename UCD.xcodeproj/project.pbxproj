@@ -16,6 +16,7 @@
 		755C7E0E25BBEEFC00C10026 /* ConfirmCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */; };
 		755C7E1225BBFBFF00C10026 /* StayingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755C7E1125BBFBFF00C10026 /* StayingScreen.storyboard */; };
 		755C7E1525BBFC5F00C10026 /* TopStayingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */; };
+		755C7E1825BC36FE00C10026 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1725BC36FE00C10026 /* OrderViewController.swift */; };
 		75A10CD025BA6DF3006F4C4E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */; };
 		75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */; };
 		75A10CDB25BAA8BB006F4C4E /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */; };
@@ -93,6 +94,7 @@
 			children = (
 				755C7E1125BBFBFF00C10026 /* StayingScreen.storyboard */,
 				755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */,
+				755C7E1725BC36FE00C10026 /* OrderViewController.swift */,
 			);
 			path = StayingScreen;
 			sourceTree = "<group>";
@@ -207,6 +209,7 @@
 				75A10CE425BAC966006F4C4E /* SetBookingViewController.swift in Sources */,
 				75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */,
 				755C7E1525BBFC5F00C10026 /* TopStayingScreenViewController.swift in Sources */,
+				755C7E1825BC36FE00C10026 /* OrderViewController.swift in Sources */,
 				75A10CE025BAA9F6006F4C4E /* BookingData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

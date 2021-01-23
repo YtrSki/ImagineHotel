@@ -29,3 +29,27 @@ var userName = "田仲 優希"
 
 /* アプリの状態（ホテル利用中か利用外か） */
 var isStayingInHotel = false
+
+/* 商品データ */
+struct Yakitori {
+    var name: String
+    var value: Int
+    
+    init(name: String, value: Int) {
+        self.name = name
+        self.value = value
+    }
+}
+
+var yakitoriList: [Yakitori] = [
+    Yakitori(name: "鳥くし 塩", value: 150),
+    Yakitori(name: "鳥くし タレ", value: 150),
+    Yakitori(name: "豚くし 塩", value: 200),
+    Yakitori(name: "豚くし タレ", value: 200),
+    Yakitori(name: "逸品餃子", value: 190),
+    Yakitori(name: "塩もつ煮込み", value: 380),
+    Yakitori(name: "肉味噌もやし", value: 380),
+    Yakitori(name: "馬刺し", value: 580),
+    Yakitori(name: "揚げたて手羽元", value: 490),
+    Yakitori(name: "特級キャビア", value: 8100)
+]
