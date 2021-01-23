@@ -51,5 +51,15 @@ var yakitoriList: [Yakitori] = [
     Yakitori(name: "肉味噌もやし", value: 380),
     Yakitori(name: "馬刺し", value: 580),
     Yakitori(name: "揚げたて手羽元", value: 490),
-    Yakitori(name: "特級キャビア", value: 8100)
+    Yakitori(name: "特級キャビア", value: 8100),
+    Yakitori(name: "ジョッキビール 500mL", value: 500),
+    Yakitori(name: "ジョッキビール 250mL", value: 300),
+    Yakitori(name: "ハイボール 500mL", value: 450),
+    Yakitori(name: "オレンジジュース 500mL", value: 200),
+    Yakitori(name: "コーラ 500mL", value: 200),
+    Yakitori(name: "カルピス 500mL", value: 200)
 ]
+
+/* 購入済み商品リスト */
+var purchasedList: [Yakitori] = []
+

@@ -28,8 +28,6 @@ class CheckInViewController: UIViewController {
             topOverlayLabel.text = "ホテルフロントにある\nチェックインQRコードを読み取ります"
             topOverlayLabel.textColor = .black
         }
-        
-        print(#function)
     }
     
     override func viewDidLoad() {
