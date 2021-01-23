@@ -13,7 +13,15 @@
 		7531DD7825AD680700D43E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531DD7625AD680700D43E0B /* Main.storyboard */; };
 		7531DD7A25AD680800D43E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7531DD7925AD680800D43E0B /* Assets.xcassets */; };
 		7531DD7D25AD680800D43E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531DD7B25AD680800D43E0B /* LaunchScreen.storyboard */; };
+		755C7E0E25BBEEFC00C10026 /* ConfirmCheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */; };
+		755C7E1225BBFBFF00C10026 /* StayingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755C7E1125BBFBFF00C10026 /* StayingScreen.storyboard */; };
+		755C7E1525BBFC5F00C10026 /* TopStayingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */; };
 		75A10CD025BA6DF3006F4C4E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */; };
+		75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */; };
+		75A10CDB25BAA8BB006F4C4E /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */; };
+		75A10CE025BAA9F6006F4C4E /* BookingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CDF25BAA9F6006F4C4E /* BookingData.swift */; };
+		75A10CE425BAC966006F4C4E /* SetBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CE325BAC966006F4C4E /* SetBookingViewController.swift */; };
+		75A10CE825BAC974006F4C4E /* SetBookingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A10CE725BAC974006F4C4E /* SetBookingViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +33,15 @@
 		7531DD7925AD680800D43E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7531DD7C25AD680800D43E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7531DD7E25AD680800D43E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCheckInViewController.swift; sourceTree = "<group>"; };
+		755C7E1125BBFBFF00C10026 /* StayingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StayingScreen.storyboard; sourceTree = "<group>"; };
+		755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStayingScreenViewController.swift; sourceTree = "<group>"; };
 		75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeReader.swift; sourceTree = "<group>"; };
+		75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		75A10CDF25BAA9F6006F4C4E /* BookingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingData.swift; sourceTree = "<group>"; };
+		75A10CE325BAC966006F4C4E /* SetBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBookingViewController.swift; sourceTree = "<group>"; };
+		75A10CE725BAC974006F4C4E /* SetBookingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetBookingViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +74,13 @@
 		7531DD6F25AD680700D43E0B /* UCD */ = {
 			isa = PBXGroup;
 			children = (
+				755C7E1025BBFBDD00C10026 /* StayingScreen */,
+				75A10CDD25BAA994006F4C4E /* Data */,
 				75A10CCE25BA6DC9006F4C4E /* TopScreen */,
+				75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */,
 				7531DD7025AD680700D43E0B /* AppDelegate.swift */,
 				7531DD7225AD680700D43E0B /* SceneDelegate.swift */,
 				7531DD7425AD680700D43E0B /* ViewController.swift */,
-				7531DD7625AD680700D43E0B /* Main.storyboard */,
 				7531DD7925AD680800D43E0B /* Assets.xcassets */,
 				7531DD7B25AD680800D43E0B /* LaunchScreen.storyboard */,
 				7531DD7E25AD680800D43E0B /* Info.plist */,
@@ -70,12 +88,42 @@
 			path = UCD;
 			sourceTree = "<group>";
 		};
+		755C7E1025BBFBDD00C10026 /* StayingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				755C7E1125BBFBFF00C10026 /* StayingScreen.storyboard */,
+				755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */,
+			);
+			path = StayingScreen;
+			sourceTree = "<group>";
+		};
 		75A10CCE25BA6DC9006F4C4E /* TopScreen */ = {
 			isa = PBXGroup;
 			children = (
+				75A10CE225BAC918006F4C4E /* SetBookingView */,
 				75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */,
+				7531DD7625AD680700D43E0B /* Main.storyboard */,
+				75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */,
+				755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */,
 			);
 			path = TopScreen;
+			sourceTree = "<group>";
+		};
+		75A10CDD25BAA994006F4C4E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				75A10CDF25BAA9F6006F4C4E /* BookingData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		75A10CE225BAC918006F4C4E /* SetBookingView */ = {
+			isa = PBXGroup;
+			children = (
+				75A10CE325BAC966006F4C4E /* SetBookingViewController.swift */,
+				75A10CE725BAC974006F4C4E /* SetBookingViewController.storyboard */,
+			);
+			path = SetBookingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +183,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755C7E1225BBFBFF00C10026 /* StayingScreen.storyboard in Resources */,
 				7531DD7D25AD680800D43E0B /* LaunchScreen.storyboard in Resources */,
 				7531DD7A25AD680800D43E0B /* Assets.xcassets in Resources */,
+				75A10CE825BAC974006F4C4E /* SetBookingViewController.storyboard in Resources */,
 				7531DD7825AD680700D43E0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +202,12 @@
 				7531DD7125AD680700D43E0B /* AppDelegate.swift in Sources */,
 				75A10CD025BA6DF3006F4C4E /* CheckInViewController.swift in Sources */,
 				7531DD7325AD680700D43E0B /* SceneDelegate.swift in Sources */,
+				755C7E0E25BBEEFC00C10026 /* ConfirmCheckInViewController.swift in Sources */,
+				75A10CDB25BAA8BB006F4C4E /* BookingViewController.swift in Sources */,
+				75A10CE425BAC966006F4C4E /* SetBookingViewController.swift in Sources */,
+				75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */,
+				755C7E1525BBFC5F00C10026 /* TopStayingScreenViewController.swift in Sources */,
+				75A10CE025BAA9F6006F4C4E /* BookingData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6G99FH3BK;
 				INFOPLIST_FILE = UCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "b1018133-fun.ac.jp.UCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6G99FH3BK;
 				INFOPLIST_FILE = UCD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "b1018133-fun.ac.jp.UCD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
