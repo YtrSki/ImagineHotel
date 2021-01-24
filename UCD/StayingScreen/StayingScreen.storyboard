@@ -236,6 +236,10 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hotelRoom" translatesAutoresizingMaskIntoConstraints="NO" id="n1s-ui-wpj">
+                                <rect key="frame" x="0.0" y="699" width="428" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fcz-J7-iww"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1106,6 +1110,7 @@
         <image name="food3" width="1280" height="720"/>
         <image name="food4" width="1280" height="720"/>
         <image name="foodMenuButton" width="1536" height="768"/>
+        <image name="hotelRoom" width="1112" height="834"/>
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="roomServiceButton" width="768" height="768"/>
         <image name="television" width="512" height="512"/>
