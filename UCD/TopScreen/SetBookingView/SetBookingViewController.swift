@@ -15,19 +15,20 @@ class SetBookingViewController: UIViewController {
     @IBOutlet weak var numOfPeopleLabel: UILabel!
     @IBOutlet weak var numOfDayStepper: UIStepper!
     @IBOutlet weak var numOfPeopleStepper: UIStepper!
+    @IBOutlet weak var hotelPlanPicker: UIPickerView!
     
     @IBAction func numOfDayStepperAction(_ sender: UIStepper) {
-        numOfDayLabel.text = Int(sender.value).description
+        numOfDayLabel.text = Int(sender.value).description + " 泊"
     }
     @IBAction func numOfPeopleStepperAction(_ sender: UIStepper) {
-        numOfPeopleLabel.text = Int(sender.value).description
+        numOfPeopleLabel.text = Int(sender.value).description + " 名"
     }
     
     @IBAction func confirmButtonAction(_ sender: Any) {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "yyyy年 MM月 dd日"
         
-        let alert: UIAlertController = UIAlertController(title: "以下の内容で予約を確定しますか？", message: "\nホテル\n\( hotelNameLabel.text!.description)\n\n宿泊日時\n\(dateFormat.string(from: datePicker.date))\n\n宿泊日数\n\( numOfDayLabel.text!.description)日\n\n利用者数\n\(numOfPeopleLabel.text!.description)名", preferredStyle:  UIAlertController.Style.alert)
+        let alert: UIAlertController = UIAlertController(title: "以下の内容で予約を確定しますか？", message: "\nホテル\n\( hotelNameLabel.text!.description)\n\n宿泊日時\n\(dateFormat.string(from: datePicker.date))\n\n宿泊日数\n\( numOfDayLabel.text!.description)\n\n利用者数\n\(numOfPeopleLabel.text!.description)\n\nご利用プラン\n\(hotelPlanList[selectedHotelPlanNum])", preferredStyle:  UIAlertController.Style.alert)
         
         let defaultAction: UIAlertAction = UIAlertAction(title: "はい", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
@@ -76,5 +77,23 @@ extension SetBookingViewController {
             return
         }
         presentationController.delegate?.presentationControllerDidDismiss?(presentationController)
+    }
+}
+
+extension SetBookingViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return hotelPlanList.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return hotelPlanList[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedHotelPlanNum = row
     }
 }

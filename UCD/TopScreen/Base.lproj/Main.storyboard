@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALZ-w3-zrY">
-                                <rect key="frame" x="59" y="190" width="310" height="546"/>
+                                <rect key="frame" x="59" y="135" width="310" height="656"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="宿泊日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLB-IT-fnY">
@@ -154,8 +154,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="プラン" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLg-0E-cUM">
+                                        <rect key="frame" x="28" y="453" width="255" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-bh-6Tp">
-                                        <rect key="frame" x="162" y="460" width="121" height="58"/>
+                                        <rect key="frame" x="27" y="517" width="255" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -172,7 +179,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En7-G6-ngE">
-                                        <rect key="frame" x="28" y="460" width="121" height="58"/>
+                                        <rect key="frame" x="95" y="583" width="121" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="いいえ">
@@ -189,6 +196,13 @@
 チェックインしますか？</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ご利用プラン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-dh-G24">
+                                        <rect key="frame" x="103" y="424" width="104" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -229,6 +243,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="0cg-3g-iOy" id="me2-WY-yYK"/>
+                        <outlet property="hotelPlanLabel" destination="mLg-0E-cUM" id="UQh-5r-n98"/>
                         <outlet property="numOfDateLabel" destination="ufg-eM-Oj2" id="iab-R9-Ime"/>
                         <outlet property="numOfPeopleLabel" destination="oni-cM-mHZ" id="Po6-GR-UPO"/>
                         <outlet property="processingView" destination="OKQ-Hk-Joa" id="jkk-cc-CqN"/>
@@ -316,9 +331,8 @@
                                     <action selector="bookingButtonAction:" destination="f5Z-g8-hHY" eventType="touchUpInside" id="8gJ-28-ftU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="現在のご予約及びご利用履歴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zC-nl-Dwd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在のご予約及びご利用履歴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zC-nl-Dwd">
                                 <rect key="frame" x="101" y="192" width="226" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -327,6 +341,7 @@
                         <viewLayoutGuide key="safeArea" id="zQ1-Y4-adX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4zC-nl-Dwd" firstAttribute="top" secondItem="zQ1-Y4-adX" secondAttribute="top" constant="148" id="35d-2E-Xcc"/>
                             <constraint firstItem="zQ1-Y4-adX" firstAttribute="trailing" secondItem="vZ8-pC-Un8" secondAttribute="trailing" constant="20" id="4JH-IT-1pD"/>
                             <constraint firstItem="vZ8-pC-Un8" firstAttribute="leading" secondItem="zQ1-Y4-adX" secondAttribute="leading" constant="20" id="5he-Ui-Tka"/>
                             <constraint firstItem="zQ1-Y4-adX" firstAttribute="trailing" secondItem="UUj-TH-hUh" secondAttribute="trailing" constant="92" id="6yw-LO-a2i"/>
@@ -335,6 +350,8 @@
                             <constraint firstItem="zQ1-Y4-adX" firstAttribute="trailing" secondItem="YCo-0g-h0s" secondAttribute="trailing" constant="44" id="Mnh-P2-810"/>
                             <constraint firstItem="zQ1-Y4-adX" firstAttribute="bottom" secondItem="vZ8-pC-Un8" secondAttribute="bottom" constant="122" id="O3U-ic-mrO"/>
                             <constraint firstItem="UUj-TH-hUh" firstAttribute="top" secondItem="zQ1-Y4-adX" secondAttribute="top" constant="71" id="R7z-7f-nLJ"/>
+                            <constraint firstItem="zQ1-Y4-adX" firstAttribute="trailing" secondItem="4zC-nl-Dwd" secondAttribute="trailing" constant="101" id="drw-Zj-EbB"/>
+                            <constraint firstItem="4zC-nl-Dwd" firstAttribute="leading" secondItem="zQ1-Y4-adX" secondAttribute="leading" constant="101" id="ev5-MG-4fi"/>
                             <constraint firstItem="zQ1-Y4-adX" firstAttribute="bottom" secondItem="lpK-VQ-IK8" secondAttribute="bottom" constant="30" id="fM7-lc-HwG"/>
                             <constraint firstItem="UUj-TH-hUh" firstAttribute="leading" secondItem="zQ1-Y4-adX" secondAttribute="leading" constant="92" id="fXy-gp-YCM"/>
                             <constraint firstItem="lpK-VQ-IK8" firstAttribute="leading" secondItem="zQ1-Y4-adX" secondAttribute="leading" constant="20" id="fqV-zx-aQV"/>
@@ -360,14 +377,117 @@
                     <view key="view" contentMode="scaleToFill" id="hTv-JL-JrK">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUJ-32-Bnq">
+                                <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                                <items>
+                                    <navigationItem title="設定" id="4hJ-7Z-doZ"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-fW-JJw">
+                                <rect key="frame" x="20" y="115" width="388" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="　友達登録">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8lm-7Z-6pS" kind="show" id="lfX-CS-gcn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一緒にご利用される方を友達登録することで、ホテルご利用中に別室でもテレビ通話を楽しんだり、同じ料理を注文したりすることができます。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPv-qE-yow">
+                                <rect key="frame" x="20" y="173" width="388" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-9y-nwE">
+                                <rect key="frame" x="373" y="121" width="20" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezl-rp-b6P">
+                                <rect key="frame" x="20" y="265" width="388" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="　お支払い方法">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="事前にお支払い方法を設定いただくことで、チェックアウトの際にお会計が自動で決済され、お支払いの手間がかからなくなります。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFU-as-uju">
+                                <rect key="frame" x="20" y="323" width="388" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5x4-C1-RPb">
+                                <rect key="frame" x="373" y="270" width="20" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="b62-6I-NL7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WUJ-32-Bnq" firstAttribute="trailing" secondItem="b62-6I-NL7" secondAttribute="trailing" id="392-Eb-iPV"/>
+                            <constraint firstItem="WUJ-32-Bnq" firstAttribute="leading" secondItem="b62-6I-NL7" secondAttribute="leading" id="IEx-qx-9X2"/>
+                            <constraint firstItem="WUJ-32-Bnq" firstAttribute="top" secondItem="b62-6I-NL7" secondAttribute="top" id="vf1-RB-ahX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="gearshape.fill" catalog="system" id="QK4-k1-rsc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BX6-FC-Ui0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="886"/>
+            <point key="canvasLocation" x="764.01869158878503" y="885.74514038876896"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kkt-kR-PAP">
+            <objects>
+                <viewController id="8lm-7Z-6pS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9D-pu-wp0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="friendQR" translatesAutoresizingMaskIntoConstraints="NO" id="I49-Hb-ed5">
+                                <rect key="frame" x="116" y="35" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="田仲 優希 さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHb-B4-hI9">
+                                <rect key="frame" x="150" y="243" width="132" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfN-8U-LOH">
+                                <rect key="frame" x="54" y="290" width="323" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">こちらのQRコードを読み取って
+田仲 さんを友達登録してください</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-Or-dpi">
+                                <rect key="frame" x="84" y="411" width="261" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="他の方のQRコードを読み取る">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fYX-V4-glw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Co3-za-LUe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BG-nS-Kpy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648.5981308411215" y="885.74514038876896"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ill-i6-805">
@@ -393,11 +513,16 @@
     </scenes>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="friendQR" width="196" height="196"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -27,6 +27,19 @@ var bookingList: [Booking] = []
 /* ユーザの情報 */
 var userName = "田仲 優希"
 
+/* ホテルプラン一覧 */
+var hotelPlanList: [String] = [
+    "夜間全日飲み放題宿泊",
+    "夜間本日飲み放題宿泊",
+    "ソフトドリンク放題宿泊",
+    "ドリンクチケット宿泊",
+    "飲食放題チケット宿泊",
+    "食事のみ宿泊"
+]
+
+/* 選択されたプランの番号 */
+var selectedHotelPlanNum = 0
+
 /* アプリの状態（ホテル利用中か利用外か） */
 var isStayingInHotel = false
 

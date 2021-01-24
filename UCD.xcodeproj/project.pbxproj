@@ -18,6 +18,9 @@
 		755C7E1525BBFC5F00C10026 /* TopStayingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */; };
 		755C7E1825BC36FE00C10026 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1725BC36FE00C10026 /* OrderViewController.swift */; };
 		755C7E1E25BC681400C10026 /* OrderConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C7E1D25BC681400C10026 /* OrderConfirmViewController.swift */; };
+		757BAA7F25BD5F3E004C57BF /* PurchasedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BAA7E25BD5F3E004C57BF /* PurchasedListViewController.swift */; };
+		757BAA8225BD667C004C57BF /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BAA8125BD667C004C57BF /* CheckOutViewController.swift */; };
+		757BAA8525BD6ACA004C57BF /* ConfirmCheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BAA8425BD6ACA004C57BF /* ConfirmCheckOutViewController.swift */; };
 		75A10CD025BA6DF3006F4C4E /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */; };
 		75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */; };
 		75A10CDB25BAA8BB006F4C4E /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */; };
@@ -40,6 +43,9 @@
 		755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStayingScreenViewController.swift; sourceTree = "<group>"; };
 		755C7E1725BC36FE00C10026 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		755C7E1D25BC681400C10026 /* OrderConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmViewController.swift; sourceTree = "<group>"; };
+		757BAA7E25BD5F3E004C57BF /* PurchasedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedListViewController.swift; sourceTree = "<group>"; };
+		757BAA8125BD667C004C57BF /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		757BAA8425BD6ACA004C57BF /* ConfirmCheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCheckOutViewController.swift; sourceTree = "<group>"; };
 		75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
 		75A10CD625BA7439006F4C4E /* MyQRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyQRCodeReader.swift; sourceTree = "<group>"; };
 		75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 				755C7E1425BBFC5F00C10026 /* TopStayingScreenViewController.swift */,
 				755C7E1725BC36FE00C10026 /* OrderViewController.swift */,
 				755C7E1D25BC681400C10026 /* OrderConfirmViewController.swift */,
+				757BAA7E25BD5F3E004C57BF /* PurchasedListViewController.swift */,
+				757BAA8125BD667C004C57BF /* CheckOutViewController.swift */,
+				757BAA8425BD6ACA004C57BF /* ConfirmCheckOutViewController.swift */,
 			);
 			path = StayingScreen;
 			sourceTree = "<group>";
@@ -108,9 +117,9 @@
 			children = (
 				75A10CE225BAC918006F4C4E /* SetBookingView */,
 				75A10CCF25BA6DF3006F4C4E /* CheckInViewController.swift */,
+				755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */,
 				7531DD7625AD680700D43E0B /* Main.storyboard */,
 				75A10CDA25BAA8BB006F4C4E /* BookingViewController.swift */,
-				755C7E0D25BBEEFC00C10026 /* ConfirmCheckInViewController.swift */,
 			);
 			path = TopScreen;
 			sourceTree = "<group>";
@@ -206,10 +215,13 @@
 			files = (
 				755C7E1E25BC681400C10026 /* OrderConfirmViewController.swift in Sources */,
 				7531DD7525AD680700D43E0B /* ViewController.swift in Sources */,
+				757BAA7F25BD5F3E004C57BF /* PurchasedListViewController.swift in Sources */,
 				7531DD7125AD680700D43E0B /* AppDelegate.swift in Sources */,
 				75A10CD025BA6DF3006F4C4E /* CheckInViewController.swift in Sources */,
+				757BAA8225BD667C004C57BF /* CheckOutViewController.swift in Sources */,
 				7531DD7325AD680700D43E0B /* SceneDelegate.swift in Sources */,
 				755C7E0E25BBEEFC00C10026 /* ConfirmCheckInViewController.swift in Sources */,
+				757BAA8525BD6ACA004C57BF /* ConfirmCheckOutViewController.swift in Sources */,
 				75A10CDB25BAA8BB006F4C4E /* BookingViewController.swift in Sources */,
 				75A10CE425BAC966006F4C4E /* SetBookingViewController.swift in Sources */,
 				75A10CD725BA7439006F4C4E /* MyQRCodeReader.swift in Sources */,

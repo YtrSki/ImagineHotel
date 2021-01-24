@@ -13,6 +13,7 @@ class ConfirmCheckInViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var numOfDateLabel: UILabel!
     @IBOutlet weak var numOfPeopleLabel: UILabel!
+    @IBOutlet weak var hotelPlanLabel: UILabel!
     
     @IBOutlet weak var processingView: UIView!
     
@@ -38,9 +39,11 @@ class ConfirmCheckInViewController: UIViewController {
         dateFormat.dateFormat = "yyyy年 MM月 dd日"
         dateLabel.text = dateFormat.string(from: bookingList[0].date)
         
-        numOfDateLabel.text = bookingList[0].numOfDay.description + "日"
+        numOfDateLabel.text = bookingList[0].numOfDay.description + "泊"
         
         numOfPeopleLabel.text = bookingList[0].numOfPeople.description + "名"
+        
+        hotelPlanLabel.text = hotelPlanList[selectedHotelPlanNum]
     }
     
     @objc func runDismiss() -> Void {
@@ -55,6 +58,7 @@ class ConfirmCheckInViewController: UIViewController {
 extension UITabBarController {
     func presentStayingScreen() -> Void {
         if isStayingInHotel {
+            self.selectedIndex = 0
             let topStayingScreenVC = UIStoryboard(name: "StayingScreen", bundle: nil).instantiateViewController(withIdentifier: "topStayingScreenViewController")
             topStayingScreenVC.modalTransitionStyle = .flipHorizontal
             topStayingScreenVC.modalPresentationStyle = .fullScreen
